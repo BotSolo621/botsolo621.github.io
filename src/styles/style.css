@@ -2,6 +2,63 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@keyframes topSway {
+  0%, 100% {
+    transform: translateY(0) rotate(3deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes botSway {
+  0%, 100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(-5deg);
+  }
+}
+
+@keyframes charSway {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-3px) rotate(1deg);
+  }
+}
+
+@font-face {
+    font-family: darlingCoffee;
+    src: url(/src/assets/fonts/darlingCoffee/Darling\ Coffee.ttf);
+}
+
+.darlingCoffee{
+    font-family: darlingCoffee;
+}
+
+.glassy-text {
+  background: linear-gradient(to top left, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255,255,255,0.3), 0 0 3px rgba(0,0,0,0.1);
+}
+
+.glassy-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.glassy-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
 .ECBG{
     filter: blur(0.8px)
 }
