@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="src/styles/style.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sleeby~</title>
+    </head>
+    <body class="m-0 p-0 bg-white text-black">
+        <div class="fixed top-0 left-0 w-screen h-screen overflow-hidden">
+            <!-- fixed top bar -->
+            <div
+                class="absolute top-[-2vh] left-[-10vw] w-[120vw] bg-black h-[20vh] rotate-[3deg] z-10"
+                style="animation: topSway 6s ease-in-out infinite"
+            ></div>
+
+            <!-- background cycle -->
+            <div
+                id="bg-cycle"
+                class="absolute w-full h-[42vh] top-[15vh] bg-cover bg-center z-0 blur-sm"
+            ></div>
+
+            <!-- main character and content -->
+            <main class="flex h-[70vh] relative">
+                <section
+                    id="character"
+                    class="self-center flex flex-row items-stretch w-full"
+                >
+                    <img
+                        src="src/assets/Characters/sillyGoober.png"
+                        alt="sillyGoober"
+                        class="w-[32vh] ECBG z-10"
+                        style="animation: charSway 6s ease-in-out infinite"
+                    />
+                    <div class="flex-1 h-[25vh] self-center flex flex-col justify-center">
+                        <div class="mb-2">
+                            <h1 class="text-5xl darlingCoffee glassy-text drop-shadow-[0_0_4px_rgba(255,255,255,0.4)] -ml-[-1vh]">Eppybot</h1>
+                        </div>
+                        <div class="flex gap-4 -ml-[2vh]">
+                            <div class="flex gap-4">
+                            <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-blue-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-blue-500/30 transition duration-200">
+                                About
+                            </button>
+                            <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-green-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-green-500/30 transition duration-200">
+                                Projects
+                            </button>
+                            <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-purple-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-purple-500/30 transition duration-200">
+                                Social
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- fixed bottom bars -->
+            <div
+                class="absolute bottom-[45vh] left-[-10vw] w-[120vw] bg-black h-[5vh] rotate-[-4deg] z-10"
+                style="animation: botSway 6s ease-in-out infinite"
+            ></div>
+
+            <div
+                class="absolute top-[53vh] left-[-10vw] w-[120vw] bg-black h-[15vh] rotate-[-4deg] z-10"
+            ></div>
+
+            <!-- lower gradient section -->
+            <main class="absolute w-full h-[100vh] z-10 top-[65vh] flex bg-gradient-to-b from-black via-[#0f012e] to-[#05000c]">
+                <section id="currectObsession"></section>
+            </main>
+        </div>
+        <script src="src/scripts/main.js"></script>
+    </body>
+</html>
