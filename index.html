@@ -8,19 +8,23 @@
         <title>sleeby~</title>
     </head>
     <body class="bg-gray-950">
-        <div id="backgroundContainter" class="w-full min-h-screen flex flex-col">
+        <div id="backgroundContainter" class="relative w-full min-h-screen flex flex-col">
             <div
-                class="w-[120vw] bg-black h-[20vh] rotate-[3deg] -ml-[10vw] -mt-[2vh] z-0"
+                id="bg-cycle"
+                class="absolute inset-0 bg-cover bg-center blur-sm transform -translate-y-56"
+            ></div>
+            <div
+                class="relative w-[120vw] bg-black h-[20vh] rotate-[3deg] -ml-[10vw] -mt-[2vh] z-0"
                 style="animation: topSway 6s ease-in-out infinite"
             ></div>
             <img
                 src="src/assets/Characters/sillyGoober.png"
                 alt="sillyGoober"
-                class="w-[28vh] ECBG z-5 -mt-[5vh] -ml-[-2vw]"
+                class="relative w-[28vh] ECBG -mt-[5vh] -ml-[-2vw] z-5"
                 style="animation: charSway 6s ease-in-out infinite"
             />
             <div
-                class="w-[120vw] bg-black h-[20vh] rotate-[-4deg] -ml-[10vw] -mt-[6vh] z-10"
+                class="relative w-[120vw] bg-black h-[20vh] rotate-[-4deg] -ml-[10vw] -mt-[6vh] z-10"
                 style="animation: botSway 6s ease-in-out infinite"
             ></div>
         </div>
