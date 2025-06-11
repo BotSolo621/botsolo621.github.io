@@ -17,15 +17,36 @@
                 class="relative w-[120vw] bg-black h-[20vh] rotate-[3deg] -ml-[10vw] -mt-[2vh] z-0"
                 style="animation: topSway 6s ease-in-out infinite"
             ></div>
-            <img
+            <div id="startContainer" class="flex flex-row items-center">
+                <img
                 src="src/assets/Characters/sillyGoober.png"
                 alt="sillyGoober"
                 class="relative w-[28vh] ECBG -mt-[5vh] -ml-[-2vw] z-5"
                 style="animation: charSway 6s ease-in-out infinite"
-            />
+                />
+                <div class="flex flex-col">
+                    <div>
+                        <h1 class="text-5xl darlingCoffee glassy-text drop-shadow-[0_0_4px_rgba(255,255,255,0.4)] -ml-[-1vh]">Eppybot</h1>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-blue-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-blue-500/30 transition duration-200">
+                            About
+                        </button>
+                        <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-green-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-green-500/30 transition duration-200">
+                            Projects
+                        </button>
+                        <button class="px-4 py-2 rounded text-white backdrop-blur-sm bg-purple-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-purple-500/30 transition duration-200">
+                            Social
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div
-                class="relative w-[120vw] bg-black h-[20vh] rotate-[-4deg] -ml-[10vw] -mt-[6vh] z-10"
+                class="relative w-[120vw] bg-black h-[10vh] rotate-[-4deg] -ml-[10vw] -mt-[6vh] z-10"
                 style="animation: botSway 6s ease-in-out infinite"
+            ></div>
+            <div
+                class="relative w-[120vw] bg-black h-[10vh] -ml-[10vw] -mt-[6vh] z-10"
             ></div>
         </div>
         <script src="src/scripts/main.js"></script>
