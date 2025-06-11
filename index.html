@@ -16,55 +16,65 @@
         id="bg-cycle"
         class="absolute inset-0 bg-cover bg-center blur-sm transform -translate-y-56"
       ></div>
+
       <div
         class="relative w-[120vw] bg-black h-[20vh] rotate-[3deg] -ml-[10vw] -mt-[2vh] z-0"
         style="animation: topSway 6s ease-in-out infinite"
       ></div>
-      <div id="startContainer" class="flex flex-row items-center">
+
+      <!-- Start Container -->
+      <div
+        id="startContainer"
+        class="flex w-full items-center px-[2vw]  flex-wrap"
+      >
+        <!-- Character Image -->
         <img
           src="src/assets/Characters/sillyGoober.png"
           alt="sillyGoober"
-          class="relative w-[28vh] ECBG -mt-[5vh] -ml-[-2vw] z-5 shrink"
+          class="flex-[1_1_auto] min-w-0 max-w-[50vw] w-full ECBG z-5 -mt-[10vw]"
           style="animation: charSway 6s ease-in-out infinite"
         />
+
+        <!-- Info Container -->
         <div
           id="infoContainer"
-          class="flex flex-col items-center flex-shrink min-w-0"
+          class="flex flex-col items-center flex-[1_1_0] -mt-[10vw]"
         >
-          <div>
-            <h1
-              class="text-[5vh] darlingCoffee glassy-text drop-shadow-[0_0_4px_rgba(255,255,255,0.4)] truncate"
-            >
-              Eppybot
-            </h1>
-          </div>
-          <div class="flex gap-4 flex-wrap justify-center">
+          <h1
+            class="text-[10vw] darlingCoffee glassy-text drop-shadow-[0_0_4px_rgba(255,255,255,0.4)] truncate"
+          >
+            Eppybot
+          </h1>
+          <div class="flex gap-[1vw] flex-wrap justify-center">
             <button
-              class="px-[1vh] py-[0.5vh] text-[2.3vh] rounded text-white backdrop-blur-sm bg-blue-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-blue-500/30 transition duration-200 shrink"
+              class="px-[1.5vh] py-[0.5vh] text-[2.5vw] rounded text-white backdrop-blur-sm bg-blue-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-blue-500/30 transition duration-200 shrink"
             >
               About
             </button>
             <button
-              class="px-[1vh] py-[0.5vh] text-[2.2vh] rounded text-white backdrop-blur-sm bg-green-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-green-500/30 transition duration-200 shrink"
+              class="px-[2vh] py-[0.5vh] text-[2.5vw] rounded text-white backdrop-blur-sm bg-green-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-green-500/30 transition duration-200 shrink"
             >
               Projects
             </button>
             <button
-              class="px-[1vh] py-[0.5vh] text-[2.2vh] rounded text-white backdrop-blur-sm bg-purple-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-purple-500/30 transition duration-200 shrink"
+              class="px-[1.5vh] py-[0.5vh] text-[2.5vw] rounded text-white backdrop-blur-sm bg-purple-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-purple-500/30 transition duration-200 shrink"
             >
               Social
             </button>
           </div>
         </div>
       </div>
+
+      <!-- Bottom Bars -->
       <div
         class="relative w-[120vw] bg-black h-[10vh] rotate-[-4deg] -ml-[10vw] -mt-[6vh] z-10"
         style="animation: botSway 6s ease-in-out infinite"
       ></div>
       <div
-        class="relative w-[120vw] bg-black h-[10vh] -ml-[10vw] -mt-[6vh] z-10"
+        class="relative w-full bg-black h-[10vh] -mt-[3vh] z-10"
       ></div>
     </div>
+    
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
