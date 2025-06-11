@@ -9,15 +9,19 @@
     </head>
     <body class="m-0 p-0 bg-white text-black">
         <div class="fixed top-0 left-0 w-screen h-screen overflow-hidden">
+            <!-- fixed top bar -->
             <div
-                class="absolute top-[-2vh] w-[110vw] -ml-[5vw] bg-black h-[20vh] rotate-[3deg] z-10"
+                class="absolute top-[-2vh] left-[-10vw] w-[120vw] bg-black h-[20vh] rotate-[3deg] z-10"
                 style="animation: topSway 6s ease-in-out infinite"
             ></div>
+
+            <!-- background cycle -->
             <div
                 id="bg-cycle"
                 class="absolute w-full h-[42vh] top-[15vh] bg-cover bg-center z-0 blur-sm"
             ></div>
 
+            <!-- main character and content -->
             <main class="flex h-[70vh] relative">
                 <section
                     id="character"
@@ -47,24 +51,20 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="flex-1 h-[25vh] self-center pr-8">
-                        <span class="text-xl">Hi, I'm Epi.</span><br>
-                        I'm a highschool student passionate about programming and math!
-                    </div>
-                    -->
                 </section>
             </main>
 
+            <!-- fixed bottom bars -->
             <div
-                class="absolute bottom-[45vh] w-[110vw] -ml-[5vw] bg-black h-[5vh] rotate-[-4deg] z-10"
+                class="absolute bottom-[45vh] left-[-10vw] w-[120vw] bg-black h-[5vh] rotate-[-4deg] z-10"
                 style="animation: botSway 6s ease-in-out infinite"
             ></div>
 
             <div
-                class="absolute w-[110vw] -ml-[5vw] bg-black h-[15vh] rotate-[-4deg] z-10 top-[53vh]"
+                class="absolute top-[53vh] left-[-10vw] w-[120vw] bg-black h-[15vh] rotate-[-4deg] z-10"
             ></div>
 
+            <!-- lower gradient section -->
             <main class="absolute w-full h-[100vh] z-10 top-[65vh] flex bg-gradient-to-b from-black via-[#0f012e] to-[#05000c]">
                 <section id="currectObsession"></section>
             </main>
