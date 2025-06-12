@@ -3,9 +3,9 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-
 @keyframes topSway {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(4deg);
   }
   50% {
@@ -14,7 +14,8 @@
 }
 
 @keyframes botSway {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(-4deg);
   }
   50% {
@@ -26,34 +27,40 @@
   50% {
     transform: translateX(0) rotate(0deg);
   }
-  0%, 100% {
+  0%,
+  100% {
     transform: translateX(-2px) rotate(0deg);
   }
 }
 
 @font-face {
-    font-family: darlingCoffee;
-    src: url(/src/assets/fonts/darlingCoffee/Darling\ Coffee.ttf);
+  font-family: darlingCoffee;
+  src: url(/src/assets/fonts/darlingCoffee/Darling\ Coffee.ttf);
 }
 @font-face {
-    font-family: moodCake;
-    src: url(/src/assets/fonts/moodCake/Moodcake.ttf);
+  font-family: moodCake;
+  src: url(/src/assets/fonts/moodCake/Moodcake.ttf);
 }
 
-.darlingCoffee{
-    font-family: darlingCoffee;
+.darlingCoffee {
+  font-family: darlingCoffee;
 }
 
-.moodCake{
-    font-family: moodCake;
+.moodCake {
+  font-family: moodCake;
 }
-
 
 .glassy-text {
-  background: linear-gradient(to top left, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
+  background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.18)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 8px rgba(255,255,255,0.3), 0 0 3px rgba(0,0,0,0.1);
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.3),
+    0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .glassy-btn {
@@ -70,6 +77,6 @@
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-.ECBG{
-    filter: blur(0.8px)
+.ECBG {
+  filter: blur(0.8px);
 }
