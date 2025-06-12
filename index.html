@@ -50,26 +50,32 @@
           <div class="flex flex-wrap justify-center gap-[1vw]">
             <button
               onclick="scrollToAbout()"
+              class="shrink rounded border border-white/0 bg-blue-500/20 px-[1.5vh] py-[0.5vh] text-[2.5vw] text-white shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] backdrop-blur-sm transition duration-200 hover:bg-blue-500/30"
               style="
                 font-family:
                   &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
                   &quot;Trebuchet MS&quot;, sans-serif;
               "
-              class="shrink rounded border border-white/0 bg-blue-500/20 px-[1.5vh] py-[0.5vh] text-[2.5vw] text-white shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] backdrop-blur-sm transition duration-200 hover:bg-blue-500/30"
             >
               About
             </button>
-            <!-- <button style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
-            class="px-[2vh] py-[0.5vh] text-[2.5vw] rounded text-white backdrop-blur-sm bg-green-500/20 border border-white/0 shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] hover:bg-green-500/30 transition duration-200 shrink">
-            Projects
-          </button> -->
             <button
+              class="shrink rounded border border-white/0 bg-green-500/20 px-[2vh] py-[0.5vh] text-[2.5vw] text-white shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] backdrop-blur-sm transition duration-200 hover:bg-green-500/30"
               style="
                 font-family:
                   &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
                   &quot;Trebuchet MS&quot;, sans-serif;
               "
+            >
+              Current obsessions
+            </button>
+            <button
               class="shrink rounded border border-white/0 bg-purple-500/20 px-[1.5vh] py-[0.5vh] text-[2.5vw] text-white shadow-md drop-shadow-[0_0_6px_rgba(255,255,255,0.2)] backdrop-blur-sm transition duration-200 hover:bg-purple-500/30"
+              style="
+                font-family:
+                  &quot;Gill Sans&quot;, &quot;Gill Sans MT&quot;, Calibri,
+                  &quot;Trebuchet MS&quot;, sans-serif;
+              "
             >
               Socials
             </button>
@@ -83,14 +89,14 @@
         style="animation: botSway 6s ease-in-out infinite"
       ></div>
 
+      <!-- ABOUT SECTION -->
       <div
-        class="relative z-10 -mt-[3vh] flex h-[59vh] w-full bg-black bg-gradient-to-b from-black via-[#04000b] to-[#0b001a]"
+        class="relative z-10 -mt-[3vh] flex h-[59vh] w-full bg-gradient-to-b from-black via-[#090011] to-[#110118]"
       >
         <div
           id="aboutMe"
           class="relative flex w-full flex-row items-center gap-[2vw] px-[5vw] text-white"
         >
-          <!-- Left side: Text takes 2 parts -->
           <div class="min-w-0 flex-[1_1_0%]">
             <h1 id="aboutSection" class="moodCake text-[6vw]">About me</h1>
             <p
@@ -119,10 +125,25 @@
           </div>
         </div>
       </div>
-
-      <div id="socialsContainer" class="relative flex flex-col">a</div>
     </div>
-    <!-- closes #backgroundContainter -->
+
+    <!-- OBSESSIONS SECTION -->
+    <div
+      id="obsessionsContainer"
+      class="relative flex h-[50vh] w-full flex-col bg-gradient-to-b from-[#110118] via-[#130220] to-[#17032f]"
+    >
+      <div class="flex flex-1 items-center justify-center text-4xl text-white">
+        Obsessions content here
+      </div>
+    </div>
+    <div
+      id="socialsContainer"
+      class="relative flex h-[50vh] w-full flex-col bg-gradient-to-b from-[#17032f] via-[#170435] to-[#1a0642]"
+    >
+      <div class="flex flex-1 items-center justify-center text-4xl text-white">
+        Socials content here
+      </div>
+    </div>
 
     <script src="src/scripts/main.js"></script>
   </body>
