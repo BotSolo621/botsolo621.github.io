@@ -35,10 +35,19 @@
     font-family: darlingCoffee;
     src: url(/src/assets/fonts/darlingCoffee/Darling\ Coffee.ttf);
 }
+@font-face {
+    font-family: moodCake;
+    src: url(/src/assets/fonts/moodCake/Moodcake.ttf);
+}
 
 .darlingCoffee{
     font-family: darlingCoffee;
 }
+
+.moodCake{
+    font-family: moodCake;
+}
+
 
 .glassy-text {
   background: linear-gradient(to top left, rgba(255,255,255,0.08), rgba(255,255,255,0.18));
