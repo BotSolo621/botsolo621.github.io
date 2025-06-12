@@ -9,3 +9,19 @@ function scrollToAbout() {
 
   window.scrollTo({ top: y, behavior: "smooth" });
 }
+
+function scrollToObs() {
+  const section = document.getElementById("obsessionsContainer");
+  const yOffset = -40; // Adjust offset if needed
+  const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
+
+function scrollToSocials() {
+  const section = document.getElementById("socialsContainer");
+  const yOffset = -40; // Adjust offset if needed
+  const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+  window.scrollTo({ top: y, behavior: "smooth" });
+}
